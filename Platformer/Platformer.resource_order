@@ -1,0 +1,23 @@
+{
+  "FolderOrderSettings":[
+    {"name":"Objects","order":1,"path":"folders/Objects.yy",},
+    {"name":"Rooms","order":2,"path":"folders/Rooms.yy",},
+    {"name":"Sprites","order":3,"path":"folders/Sprites.yy",},
+    {"name":"Tiles","order":4,"path":"folders/Tiles.yy",},
+  ],
+  "ResourceOrderSettings":[
+    {"name":"oBrick","order":1,"path":"objects/oBrick/oBrick.yy",},
+    {"name":"oFlag","order":3,"path":"objects/oFlag/oFlag.yy",},
+    {"name":"oSpike","order":2,"path":"objects/oSpike/oSpike.yy",},
+    {"name":"Room2","order":1,"path":"rooms/Room2/Room2.yy",},
+    {"name":"sBack","order":7,"path":"sprites/sBack/sBack.yy",},
+    {"name":"sBrick","order":3,"path":"sprites/sBrick/sBrick.yy",},
+    {"name":"sFlag","order":5,"path":"sprites/sFlag/sFlag.yy",},
+    {"name":"sFlag2","order":6,"path":"sprites/sFlag2/sFlag2.yy",},
+    {"name":"sGlass","order":8,"path":"sprites/sGlass/sGlass.yy",},
+    {"name":"sPlayer","order":1,"path":"sprites/sPlayer/sPlayer.yy",},
+    {"name":"sPlayer2","order":2,"path":"sprites/sPlayer2/sPlayer2.yy",},
+    {"name":"sSpike","order":4,"path":"sprites/sSpike/sSpike.yy",},
+    {"name":"tGlass","order":1,"path":"tilesets/tGlass/tGlass.yy",},
+  ],
+}
