@@ -1,8 +1,12 @@
 {
   "FolderOrderSettings":[
-    {"name":"Rooms","order":3,"path":"folders/Rooms.yy",},
+    {"name":"Fonts","order":4,"path":"folders/Fonts.yy",},
     {"name":"Objects","order":1,"path":"folders/Objects.yy",},
+    {"name":"Rooms","order":3,"path":"folders/Rooms.yy",},
     {"name":"Sprites","order":2,"path":"folders/Sprites.yy",},
   ],
-  "ResourceOrderSettings":[],
+  "ResourceOrderSettings":[
+    {"name":"fnt_hud","order":1,"path":"fonts/fnt_hud/fnt_hud.yy",},
+    {"name":"obj_spark","order":1,"path":"objects/obj_spark/obj_spark.yy",},
+  ],
 }

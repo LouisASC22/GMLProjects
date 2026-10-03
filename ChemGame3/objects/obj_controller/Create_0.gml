@@ -8,6 +8,8 @@ global.correct_answers = 0;
 global.feedback = "";
 global.feedback_timer = 0;
 
+txt = " ";
+
 // I'll add more questions later
 global.questions = [
     {
