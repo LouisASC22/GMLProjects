@@ -7,6 +7,12 @@
   ],
   "ResourceOrderSettings":[
     {"name":"fnt_hud","order":1,"path":"fonts/fnt_hud/fnt_hud.yy",},
+    {"name":"obj_player","order":2,"path":"objects/obj_player/obj_player.yy",},
+    {"name":"obj_solid","order":3,"path":"objects/obj_solid/obj_solid.yy",},
     {"name":"obj_spark","order":1,"path":"objects/obj_spark/obj_spark.yy",},
+    {"name":"spr_player_down","order":1,"path":"sprites/spr_player_down/spr_player_down.yy",},
+    {"name":"spr_player_left","order":3,"path":"sprites/spr_player_left/spr_player_left.yy",},
+    {"name":"spr_player_right","order":4,"path":"sprites/spr_player_right/spr_player_right.yy",},
+    {"name":"spr_player_up","order":2,"path":"sprites/spr_player_up/spr_player_up.yy",},
   ],
 }
