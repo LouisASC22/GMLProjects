@@ -15,3 +15,39 @@ draw_text_transformed(20, 50, "Level: " + string(global.level), 0.3, 0.3, 0);
 draw_text_transformed(20, 75, "XP: " + string(global.xp), 0.3, 0.3, 0);
 
 draw_text_transformed(20, 100, "Questions Correct: " + string(global.correct_answers), 0.3, 0.3, 0);
+
+if (global.quiz_active)
+{
+    var gate = global.active_gate;
+
+    if (instance_exists(gate))
+    {
+        var q = global.questions[gate.question_index];
+
+        draw_rectangle(
+            30,
+            140,
+            display_get_gui_width() - 30,
+            250,
+            false
+        );
+
+        draw_text(
+            50,
+            160,
+            q.prompt
+        );
+
+        draw_text(
+            50,
+            195,
+            "Drag the protons into the answer box."
+        );
+
+        draw_text(
+            50,
+            220,
+            "Press ENTER when you finish."
+        );
+    }
+}

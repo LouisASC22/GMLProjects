@@ -9,3 +9,7 @@ if (global.feedback_timer > 0)
         global.feedback = "";
     }
 }
+
+if(mouse_check_button_pressed(2)) {
+	room_restart();
+}

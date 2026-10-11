@@ -1,4 +1,4 @@
-global.quiz_active = false;
+global.quiz_active = true;
 global.active_gate = noone;
 
 global.xp = 0;

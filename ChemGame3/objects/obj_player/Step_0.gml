@@ -30,9 +30,6 @@ if(!vspeed) {
 	image_speed = 0;
 }
 
-vsp = move_input_v * move_speed;
-var old_y = y;
-y += vsp;
 
 // running into walls
 if (place_meeting(x, y, obj_solid)) {
@@ -53,6 +50,7 @@ if (dir = "side") {
 	}
 
 	// wall climbing
+	var old_y = y;
 	y += vspeed;
 	if (place_meeting(x, y, obj_solid)) {
 	    y = old_y;
@@ -84,6 +82,10 @@ if (dir = "top") {
 		self.x = orig_x
 		self.y = orig_y
 	}
+	
+	vsp = move_input_v * move_speed;
+	var old_y = y;
+	y += vsp;
 	
 }
 
