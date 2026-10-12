@@ -1,1 +1,0 @@
-global.quiz_active = true;

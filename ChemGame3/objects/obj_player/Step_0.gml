@@ -62,14 +62,9 @@ if (dir = "side") {
 }
 
 if (dir = "top") {
-<<<<<<< HEAD
-	gravity = 0;
-	
-=======
     // For jumping, since GameMaker is in a top-down view from default, it's probably
     // better to just check if jumping is true if we want to jump over obstacles,
     // not actually increment y
->>>>>>> 74f7972bf5db574bd169eb6490ae3d007317ab60
 	if (keyboard_check_pressed(vk_space) && self.jumping == false) {
 	    self.jumping = true; jump_speed = jump_height;
 	}
