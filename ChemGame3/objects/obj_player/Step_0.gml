@@ -14,7 +14,7 @@ hsp = move_input_l * move_speed;
 var old_x = x;
 x += hsp;
 
-if(!vspeed) {
+if(!vspeed && gravity) {
 	if (move_input_l < 0) {
 	    sprite_index = spr_player_left;
 		image_speed = 1;
@@ -37,6 +37,8 @@ if (place_meeting(x, y, obj_solid)) {
 }
 
 if (dir = "side") {
+	gravity = 0.45;
+	
 	if (keyboard_check_pressed(vk_space) 
 	//&& place_meeting(x, y + 2, obj_solid)
 	) {
@@ -59,6 +61,8 @@ if (dir = "side") {
 }
 
 if (dir = "top") {
+	gravity = 0;
+	
 	if (keyboard_check_pressed(vk_space) && self.jumping == false) {
 		var orig_x = self.x
 		var orig_y = self.y
