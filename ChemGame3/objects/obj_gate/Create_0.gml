@@ -4,6 +4,6 @@ question_index = 0; // irandom( array_length(global.questions) - 1 );
 
 challenge_started = false;
 
-answer_zone = noone;
+answer_box = noone;
 
 cooldown = 0;

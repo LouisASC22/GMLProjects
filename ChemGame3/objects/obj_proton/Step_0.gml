@@ -1,4 +1,4 @@
-if (!global.quiz_active)
+if (global.quiz_active)
 {
 	instance_destroy(self);
     exit;
