@@ -14,7 +14,7 @@ if (player != noone && cooldown <= 0 && !global.quiz_active && !self.open) {
 
         var q = global.questions[question_index];
 		
-		var proton_count = q.answer + 4;
+		proton_count = q.answer + 4;
 
         if (proton_count < 10)
             proton_count = 10;

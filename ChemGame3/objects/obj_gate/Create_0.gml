@@ -7,3 +7,5 @@ challenge_started = false;
 answer_box = noone;
 
 cooldown = 0;
+
+proton_count = 0;
