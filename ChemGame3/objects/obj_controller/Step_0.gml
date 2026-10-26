@@ -10,26 +10,34 @@ if (global.feedback_timer > 0)
     }
 }
 
-if(global.quiz_active) {
+if(global.quiz_active && !global.quiz_rendered) {
 	
-	instance_create_depth(x + 150, y + 300, 0, obj_answer_box);
+	instance_create_depth(self.x + 150, self.y + 300, -100, obj_answer_box);
 	
-	var i = 0;
+	var pcount = global.active_gate.proton_count;
 	
-	while (i < global.active_gate.proton_count) {
+	for (var i = 0; i < pcount; i++) {
+		
+		instance_create_depth(
+			x + global.screen_width/2 - 30 + (i - (pcount - 1) / 2) * (sprite_get_width(spr_proton) + 5),
+			y + 160, -100, obj_proton
+		);
 		
 	}
-
+	
+	global.quiz_rendered = true;
+	
 	if(keyboard_check(vk_enter)) {
 		var subans = obj_answer_box.item_count;
 	
-		if(subans = global.questions[obj_gate.question_index].answer) {
+		if(subans = global.questions[global.active_gate.question_index].answer) {
 			global.xp += 100;
 	        global.correct_answers++;
 		}
-	
+		
 		global.quiz_active = false;
 		instance_destroy(global.active_gate);
+		global.quiz_rendered = false;
 	}
 }
 
