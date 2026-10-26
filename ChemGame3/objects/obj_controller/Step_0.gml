@@ -14,15 +14,15 @@ if(global.quiz_active) {
 	
 	if(!global.quiz_rendered) {
 	
-		instance_create_depth(self.x + 150, self.y + 300, -100, obj_answer_box);
+		instance_create_depth(120, 300, -100, obj_answer_box);
 	
 		var pcount = global.active_gate.proton_count;
 	
 		for (var i = 0; i < pcount; i++) {
 		
 			instance_create_depth(
-				x + global.screen_width/2 - 30 + (i - (pcount - 1) / 2) * (sprite_get_width(spr_proton) + 5),
-				y + 160, -100, obj_proton
+				global.screen_width/2 + (i - (pcount - 1) / 2) * (sprite_get_width(spr_proton) + 5),
+				260, -100, obj_proton
 			);
 		
 		}

@@ -24,7 +24,9 @@ if(self.bbox_right > cam_right) {
 	x -= bbox_right - cam_right;
 }
 
-if(!jumping) {
+
+
+if(!jumping && !global.quiz_active) {
     if (move_input_l != 0 or move_input_v != 0) {
         image_speed = 0.5;
       	if (move_input_l < 0) {
@@ -40,6 +42,8 @@ if(!jumping) {
     else {
         image_speed = 0;
     }
+} else if (global.quiz_active) {
+	image_speed = 0;
 }
 
 

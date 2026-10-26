@@ -11,7 +11,8 @@ global.feedback_timer = 0;
 
 global.screen_width = camera_get_view_width(view_camera[0]);
 
-audio_play_sound(msc_walking, 1, true);
+// audio_play_sound(msc_walking, 1, true);
+window_set_size(1200, 800);
 
 txt = " ";
 

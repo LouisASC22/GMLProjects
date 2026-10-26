@@ -6,6 +6,6 @@ if (!global.quiz_active)
 
 if (selected)
 {
-    x = mouse_x;
-    y = mouse_y;
+    x = mouse_x - sprite_width / 2;
+    y = mouse_y - sprite_width / 2;
 }

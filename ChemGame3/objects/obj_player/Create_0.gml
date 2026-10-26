@@ -3,6 +3,7 @@ move_speed = 4;
 jump_move_mult = 0.3;
 hsp = 0;
 vsp = 0;
+image_speed = 0;
 
 
 grav = 0.25; 
