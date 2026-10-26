@@ -26,9 +26,10 @@ if(global.quiz_active) {
 			);
 		
 		}
+		
+		global.quiz_rendered = true;
 	}
 	
-	global.quiz_rendered = true;
 	
 	if(keyboard_check(vk_enter)) {
 		var subans = obj_answer_box.item_count;

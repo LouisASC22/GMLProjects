@@ -96,14 +96,14 @@ if (dir = "top") {
 // to lock to the viewport edges I think?
 
 var cam_top = camera_get_view_y(view_camera[0]);
-var cam_bottom = camera_get_view_x(view_camera[0]) + camera_get_view_height(view_camera[0]);
+var cam_bottom = camera_get_view_y(view_camera[0]) + camera_get_view_height(view_camera[0]);
 
 if (self.bbox_top < cam_top) {
-	x -= bbox_top - cam_top;
+	y -= bbox_top - cam_top;
 }
 
 if(self.bbox_bottom > cam_bottom) {
-	x -= bbox_bottom - cam_bottom;
+	y -= bbox_bottom - cam_bottom;
 }
 // if(y >= room_height - obj_player.sprite_height) {
 // 	y = room_height - obj_player.sprite_height;

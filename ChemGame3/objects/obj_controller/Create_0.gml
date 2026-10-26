@@ -11,6 +11,8 @@ global.feedback_timer = 0;
 
 global.screen_width = camera_get_view_width(view_camera[0]);
 
+audio_play_sound(msc_walking, 1, true);
+
 txt = " ";
 
 // Questions from this 8th grade chemistry worksheet
