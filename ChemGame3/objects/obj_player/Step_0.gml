@@ -13,6 +13,17 @@ hsp = jumping ? move_input_l * move_speed * jump_move_mult : move_input_l * move
 var old_x = x;
 x += hsp;
 
+var cam_left = camera_get_view_x(view_camera[0]);
+var cam_right = camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0]);
+
+if (self.bbox_left < cam_left) {
+	x -= bbox_left - cam_left;
+}
+
+if(self.bbox_right > cam_right) {
+	x -= bbox_right - cam_right;
+}
+
 if(!jumping) {
     if (move_input_l != 0 or move_input_v != 0) {
         image_speed = 0.5;
@@ -83,9 +94,20 @@ if (dir = "top") {
 
 // This stuff may specifically need to move to side, in top-down view it would be better
 // to lock to the viewport edges I think?
-if(y >= room_height - obj_player.sprite_height) {
-	y = room_height - obj_player.sprite_height;
-	jump_speed = 0;
+
+var cam_top = camera_get_view_y(view_camera[0]);
+var cam_bottom = camera_get_view_x(view_camera[0]) + camera_get_view_height(view_camera[0]);
+
+if (self.bbox_top < cam_top) {
+	x -= bbox_top - cam_top;
 }
+
+if(self.bbox_bottom > cam_bottom) {
+	x -= bbox_bottom - cam_bottom;
+}
+// if(y >= room_height - obj_player.sprite_height) {
+// 	y = room_height - obj_player.sprite_height;
+// 	jump_speed = 0;
+// }
 
 // y = clamp(y, 0, room_height - 2 * obj_player.sprite_height);

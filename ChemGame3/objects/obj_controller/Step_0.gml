@@ -10,19 +10,22 @@ if (global.feedback_timer > 0)
     }
 }
 
-if(global.quiz_active && !global.quiz_rendered) {
+if(global.quiz_active) {
 	
-	instance_create_depth(self.x + 150, self.y + 300, -100, obj_answer_box);
+	if(!global.quiz_rendered) {
 	
-	var pcount = global.active_gate.proton_count;
+		instance_create_depth(self.x + 150, self.y + 300, -100, obj_answer_box);
 	
-	for (var i = 0; i < pcount; i++) {
+		var pcount = global.active_gate.proton_count;
+	
+		for (var i = 0; i < pcount; i++) {
 		
-		instance_create_depth(
-			x + global.screen_width/2 - 30 + (i - (pcount - 1) / 2) * (sprite_get_width(spr_proton) + 5),
-			y + 160, -100, obj_proton
-		);
+			instance_create_depth(
+				x + global.screen_width/2 - 30 + (i - (pcount - 1) / 2) * (sprite_get_width(spr_proton) + 5),
+				y + 160, -100, obj_proton
+			);
 		
+		}
 	}
 	
 	global.quiz_rendered = true;
