@@ -16,10 +16,17 @@ window_set_size(1200, 800);
 
 txt = " ";
 
+global.qtype = "balance";
+global.protq = 5;
+global.balq = 1;
+
+global.coefficients = [1, 1, 1, 1];
+
 // Questions from this 8th grade chemistry worksheet
 // https://www.chemistrylearner.com/protons-neutrons-and-electrons-practice-worksheets
 global.questions = [
     {
+		type: "protons",
         prompt: "How many protons are in a carbon atom?",
         answer: 6,
         element: "Carbon",
@@ -28,6 +35,7 @@ global.questions = [
     },
 	
 	 {
+		type: "protons",
         prompt: "How many protons are in an oxygen atom?",
         answer: 8,
         element: "Oxygen",
@@ -36,6 +44,7 @@ global.questions = [
     },
 
     {
+		type: "protons",
         prompt: "How many protons are in a nitrogen atom?",
         answer: 7,
         element: "Nitrogen",
@@ -44,6 +53,7 @@ global.questions = [
     },
 
     {
+		type: "protons",
         prompt: "How many protons are in a sodium atom?",
         answer: 11,
         element: "Sodium",
@@ -52,10 +62,24 @@ global.questions = [
     },
 
     {
+		type: "protons",
         prompt: "How many protons are in a helium atom?",
         answer: 2,
         element: "Helium",
         symbol: "He",
         explanation: "Helium has atomic number 2."
-    }
+    },
+	
+	{
+		type: "balance",
+		prompt: "Balance the following chemical equation:",
+		reactant1: "H2",
+		reactant2: "O2",
+		product1: "H2O",
+		product2: 0,
+		answer: [1, 1, 1, 1],
+		explanation: "2 H2 + O2 produces 2 H2O."
+		
+	}
+		
 ]

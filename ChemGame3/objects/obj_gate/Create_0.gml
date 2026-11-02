@@ -1,6 +1,10 @@
 open = false;
 
-question_index = irandom( array_length(global.questions) - 1 );
+if(global.qtype = "protons") {
+	question_index = irandom( global.protq - 1 );
+} else {
+	question_index = global.protq;
+}
 
 challenge_started = false;
 

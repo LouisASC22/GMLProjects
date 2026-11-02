@@ -11,15 +11,20 @@ if (player != noone && cooldown <= 0 && !global.quiz_active && !self.open) {
         global.active_gate = id;
 
         challenge_started = true;
-
-        var q = global.questions[question_index];
 		
-		proton_count = q.answer + 4;
+		var q = global.questions[question_index];
+		
+		if(q.type = "protons") {
+		
+			proton_count = q.answer + 4;
 
-        if (proton_count < 10)
-            proton_count = 10;
+	        if (proton_count < 10)
+	            proton_count = 10;
 
-        if (proton_count > 18)
-            proton_count = 18;
+	        if (proton_count > 18)
+	            proton_count = 18;
+		} else if (q.type = "balance") {
+			global.coefficients = [1, 1, 1, 1];
+		}
 	}
 }
