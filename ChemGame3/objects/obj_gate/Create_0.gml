@@ -1,5 +1,7 @@
 open = false;
 
+color = c_white;
+
 if(global.qtype = "protons") {
 	question_index = irandom( global.protq - 1 );
 } else {
