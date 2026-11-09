@@ -43,8 +43,11 @@ if(global.quiz_active) {
 		} else if (global.qtype = "balance") {
 			subans = global.coefficients;
 		}
+		
+		show_debug_message(subans);
+		show_debug_message(global.questions[global.active_gate.question_index].answer);
 	
-		if(subans = global.questions[global.active_gate.question_index].answer) {
+		if(string(subans) = string(global.questions[global.active_gate.question_index].answer)) {
 			global.xp += 100;
 	        global.correct_answers++;
 		}

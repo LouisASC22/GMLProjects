@@ -16,11 +16,12 @@ window_set_size(1200, 800);
 
 txt = " ";
 
-global.qtype = "balance";
+global.qtype = "protons";
 global.protq = 5;
 global.balq = 1;
 
 global.coefficients = [1, 1, 1, 1];
+
 
 // Questions from this 8th grade chemistry worksheet
 // https://www.chemistrylearner.com/protons-neutrons-and-electrons-practice-worksheets
