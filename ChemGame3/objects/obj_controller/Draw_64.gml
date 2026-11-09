@@ -16,6 +16,8 @@ draw_text_transformed(20, 75, "XP: " + string(global.xp), 0.3, 0.3, 0);
 
 draw_text_transformed(20, 100, "Questions Correct: " + string(global.correct_answers), 0.3, 0.3, 0);
 
+draw_text_transformed(20, 125, global.coefficients, 0.3, 0.3, 0);
+
 if (global.quiz_active)
 {
     var gate = global.active_gate;
