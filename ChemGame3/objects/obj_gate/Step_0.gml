@@ -23,8 +23,15 @@ if (player != noone && cooldown <= 0 && !global.quiz_active && !self.open) {
 
 	        if (proton_count > 18)
 	            proton_count = 18;
+				
+		// resets the coefficients on a new question
 		} else if (q.type = "balance") {
-			global.coefficients = [1, 1, 1, 1];
+			global.coefficients = [1, 1, 1, 0];
+			
+			// if there is a second product
+			if(q.answer[3]) {
+				global.coefficients[3] = 1;
+			}
 		}
 	}
 }

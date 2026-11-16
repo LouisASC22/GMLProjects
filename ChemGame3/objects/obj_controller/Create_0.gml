@@ -16,11 +16,11 @@ window_set_size(1200, 800);
 
 txt = " ";
 
-global.qtype = "protons";
+global.qtype = "balance";
 global.protq = 5;
-global.balq = 1;
+global.balq = 2;
 
-global.coefficients = [1, 1, 1, 1];
+global.coefficients = [1, 1, 1, 0];
 
 
 // Questions from this 8th grade chemistry worksheet
@@ -78,9 +78,19 @@ global.questions = [
 		reactant2: "O2",
 		product1: "H2O",
 		product2: 0,
-		answer: [1, 1, 1, 1],
+		answer: [2, 1, 2, 0],
 		explanation: "2 H2 + O2 produces 2 H2O."
-		
+	},
+	
+	{
+		type: "balance",
+		prompt: "Balance the following chemical equation:",
+		reactant1: "HCl",
+		reactant2: "NaOH",
+		product1: "NaCl",
+		product2: "H2O",
+		answer: [1, 1, 1, 1],
+		explanation: "1 HCl and 1 NaOH produces 1 NaCl and 1 H2O"
 	}
 		
 ]

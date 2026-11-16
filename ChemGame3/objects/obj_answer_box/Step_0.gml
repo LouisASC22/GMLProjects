@@ -20,7 +20,7 @@ if(global.quiz_active && mouse_check_button_pressed(mb_left)) {
 
 	// this is possibly the worst way to check all of this
 	// toby fox would be dissappointed in me if he didn't also do this
-	for (var i = 0; i < 3; i++) {
+	for (var i = 0; i < 4; i++) {
 
 		var bx = (display_get_gui_width() / 2) + 60 * (i - 2);
 

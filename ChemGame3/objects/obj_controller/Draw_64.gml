@@ -32,12 +32,20 @@ if (global.quiz_active)
 		if(global.qtype = "protons") {
 			draw_text_transformed(50, 195, "Drag the protons into the answer box.", 0.3, 0.3, 0);
 		} else if(global.qtype = "balance") {
-			draw_text_transformed(50, 195, string(global.coefficients[0]) + " " + q.reactant1 + "    +    "
-										+ string(global.coefficients[1]) + " " + q.reactant2 + "    ->    "
-										+ string(global.coefficients[2]) + " " + q.product1, 0.3, 0.3, 0);
+			if(!q.answer[3]) {
+				draw_text_transformed(50, 195, string(global.coefficients[0]) + " " + q.reactant1 + "    +    "
+											+ string(global.coefficients[1]) + " " + q.reactant2 + "    ->    "
+											+ string(global.coefficients[2]) + " " + q.product1, 0.3, 0.3, 0);
+			} else {
+				draw_text_transformed(50, 195, string(global.coefficients[0]) + " " + q.reactant1 + "    +    "
+											+ string(global.coefficients[1]) + " " + q.reactant2 + "    ->    "
+											+ string(global.coefficients[2]) + " " + q.product1 + "    +    "
+											+ string(global.coefficients[3]) + " " + q.product2, 0.3, 0.3, 0);
+			}
 			
 		}
 		
 		draw_text_transformed(50, 220, "Press ENTER when you finish.", 0.3, 0.3, 0);
     }
 }
+

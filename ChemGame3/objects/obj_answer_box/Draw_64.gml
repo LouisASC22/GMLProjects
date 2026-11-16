@@ -9,7 +9,7 @@ if(global.quiz_active) {
 		draw_text_transformed(x + box_width / 2, y + 50, "Protons: " + string(item_count), 0.3, 0.3, 0);
 	} else if (global.qtype = "balance") {
 		
-		for (var i = 0; i < 3; i++) {
+		for (var i = 0; i < 4; i++) {
 
 		    var bx = (display_get_gui_width() / 2) + 60 * (i - 2);
 
