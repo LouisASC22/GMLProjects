@@ -29,9 +29,9 @@ if (global.quiz_active)
         draw_rectangle(30, 140, display_get_gui_width() - 30, 250, true);
         draw_text_transformed( 50, 160, q.prompt, 0.3, 0.3, 0);
 		
-		if(global.qtype = "protons") {
+		if(q.type = "protons") {
 			draw_text_transformed(50, 195, "Drag the protons into the answer box.", 0.3, 0.3, 0);
-		} else if(global.qtype = "balance") {
+		} else if(q.type = "balance") {
 			if(!q.answer[3]) {
 				draw_text_transformed(50, 195, string(global.coefficients[0]) + " " + q.reactant1 + "    +    "
 											+ string(global.coefficients[1]) + " " + q.reactant2 + "    ->    "

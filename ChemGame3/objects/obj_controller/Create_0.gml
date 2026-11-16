@@ -18,7 +18,7 @@ txt = " ";
 
 global.qtype = "balance";
 global.protq = 5;
-global.balq = 2;
+global.balq = 4;
 
 global.coefficients = [1, 1, 1, 0];
 
@@ -85,12 +85,34 @@ global.questions = [
 	{
 		type: "balance",
 		prompt: "Balance the following chemical equation:",
+		reactant1: "Sb",
+		reactant2: "Cl2",
+		product1: "SbCl3",
+		product2: 0,
+		answer: [2, 3, 2, 0],
+		explanation: "2 Sb + 3 Cl2 produces 2 SbCl3."
+	},
+	
+	{
+		type: "balance",
+		prompt: "Balance the following chemical equation:",
 		reactant1: "HCl",
 		reactant2: "NaOH",
 		product1: "NaCl",
 		product2: "H2O",
 		answer: [1, 1, 1, 1],
-		explanation: "1 HCl and 1 NaOH produces 1 NaCl and 1 H2O"
+		explanation: "1 HCl + 1 NaOH produces 1 NaCl + 1 H2O"
+	},
+	
+	{
+		type: "balance",
+		prompt: "Balance the following chemical equation:",
+		reactant1: "Fe",
+		reactant2: "HCl",
+		product1: "FeCl2",
+		product2: "H2",
+		answer: [2, 2, 2, 1],
+		explanation: "2 Fe + 2 HCl produces 2 FeCl2 + 1 H2."
 	}
 		
 ]

@@ -3,9 +3,9 @@ open = false;
 color = c_white;
 
 if(global.qtype = "protons") {
-	question_index = irandom( global.protq ) - 1;
+	question_index = irandom(global.protq - 1);
 } else {
-	question_index = global.protq + global.balq - 1;
+	question_index = global.protq + irandom(global.balq - 1);
 }
 
 challenge_started = false;
