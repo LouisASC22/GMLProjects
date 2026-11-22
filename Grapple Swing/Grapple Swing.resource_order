@@ -1,0 +1,22 @@
+{
+  "FolderOrderSettings":[
+    {"name":"Fonts","order":1,"path":"folders/Fonts.yy",},
+    {"name":"Tiles","order":6,"path":"folders/Tiles.yy",},
+    {"name":"Objects","order":2,"path":"folders/Objects.yy",},
+    {"name":"Rooms","order":3,"path":"folders/Rooms.yy",},
+    {"name":"Sounds","order":4,"path":"folders/Sounds.yy",},
+    {"name":"Sprites","order":5,"path":"folders/Sprites.yy",},
+  ],
+  "ResourceOrderSettings":[
+    {"name":"oBrick","order":2,"path":"objects/oBrick/oBrick.yy",},
+    {"name":"oFlag","order":6,"path":"objects/oFlag/oFlag.yy",},
+    {"name":"oPlayer","order":5,"path":"objects/oPlayer/oPlayer.yy",},
+    {"name":"oSpike","order":3,"path":"objects/oSpike/oSpike.yy",},
+    {"name":"sBack","order":8,"path":"sprites/sBack/sBack.yy",},
+    {"name":"sBrick","order":4,"path":"sprites/sBrick/sBrick.yy",},
+    {"name":"spr_player_left","order":1,"path":"sprites/spr_player_left/spr_player_left.yy",},
+    {"name":"spr_player_right","order":2,"path":"sprites/spr_player_right/spr_player_right.yy",},
+    {"name":"spr_player_up","order":3,"path":"sprites/spr_player_up/spr_player_up.yy",},
+    {"name":"sSpike","order":5,"path":"sprites/sSpike/sSpike.yy",},
+  ],
+}

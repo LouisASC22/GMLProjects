@@ -27,10 +27,12 @@ if (player != noone && cooldown <= 0 && !global.quiz_active && !self.open) {
 		// resets the coefficients on a new question
 		} else if (q.type = "balance") {
 			global.coefficients = [1, 1, 1, 0];
+			global.balprod = 1;
 			
 			// if there is a second product
 			if(q.answer[3]) {
 				global.coefficients[3] = 1;
+				global.balprod = 2;
 			}
 		}
 	}

@@ -16,11 +16,13 @@ window_set_size(1200, 800);
 
 txt = " ";
 
-global.qtype = "balance";
-global.protq = 5;
-global.balq = 4;
+// used for different types of problems
+global.qtype = "balance"; // the current type of problem
+global.protq = 5; // the number of proton questions
+global.balq = 4; // the number of balancing questions
 
-global.coefficients = [1, 1, 1, 0];
+global.coefficients = [1, 1, 1, 0]; // the balancing coefficients
+global.balprod = 1; // how many products of balancing
 
 
 // Questions from this 8th grade chemistry worksheet
